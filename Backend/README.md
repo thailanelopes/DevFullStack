@@ -17,5 +17,3 @@ npm start
 ```
 
 Então abra [http://localhost:3000/](http://localhost:3000/) para ver a Aplicação.
-
-## FrontEnd
