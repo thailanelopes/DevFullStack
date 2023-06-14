@@ -5,20 +5,18 @@ import path from 'path';
 import routes from './routes';
 
 class App {
-  constructor() {
-    this.server = express();
+	constructor() {
+		this.server = express();
 
-    mongoose.connect(
-      'mongodb+srv://devhouse:devhouse@devhouse.o2d9ucs.mongodb.net/devhouse?retryWrites=true&w=majority',
-      {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      }
-    );
+		mongoose.connect(process.env.MONGO_URL, {
+			useUnifiedTopology: true,
+			useNewUrlParser: true,
+			useCreateIndex: true,
+		});
 
-    this.middlewares();
-    this.routes();
-  }
+		this.middlewares();
+		this.routes();
+	}
 
   middlewares() {
     this.server.use(cors());
@@ -37,5 +35,3 @@ class App {
 }
 
 export default new App().server;
-
-// mongodb+srv://devhouse:<password>@devhouse.o2d9ucs.mongodb.net/?retryWrites=true&w=majority
