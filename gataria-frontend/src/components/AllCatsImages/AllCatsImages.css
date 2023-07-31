@@ -1,0 +1,73 @@
+.AllCatsImages {
+  display: inline-block;
+  padding: 0rem;
+  position: relative;
+  margin: 1rem;
+  border-radius: 0.25rem;
+}
+
+.AllCatsImages:hover {
+  box-shadow: 0 5px 10px rgb(255, 255, 255);
+}
+
+.AllCatsImages ul {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  writing-mode: horizontal-tb;
+  display: inline-block;
+  vertical-align: middle;
+  inline-size: 160px;
+  overflow-wrap: break-word;
+  width: 100%;
+  text-align: left;
+  width: min-content;
+}
+
+.AllCatsImages ul img {
+  width: 180px;
+  height: 180px;
+  margin-right: 10px;
+}
+
+.AllCatsImages ul li strong {
+  color: #000000;
+}
+
+.AllCatsImages button {
+  top: 0.5rem;
+  right: 0.5rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: none;
+  cursor: pointer;
+  line-height: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: sans-serif;
+  position: absolute;
+  border-radius: 1.5rem;
+  background-color: #ced4da;
+  padding: 0.2rem 0.35rem 0.35rem 0.35rem;
+}
+
+.AllCatsImages button:hover,
+.AllCatsImages button:focus {
+  color: #fafafa;
+  background-color: #dd0909;
+}
+
+.AllCatsImages form {
+  display: flex;
+  flex-direction: row;
+  margin-inline: auto;
+  margin-top: 0rem;
+  background: white;
+  max-width: 350px;
+  max-height: 500px;
+  padding: 1.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 5px 5rem rgb(241, 226, 116);
+}

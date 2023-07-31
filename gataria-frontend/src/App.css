@@ -1,0 +1,69 @@
+.App main {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: #212529;
+}
+
+@media (min-width: 576px) {
+  .App main {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .App main {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .App main {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .App main {
+    max-width: 1140px;
+  }
+}
+
+.App nav {
+  padding: 0;
+  background-color: #ffe986;
+  box-shadow: 0 2px 5px
+    rgba(rgb(239, 206, 121), rgb(245, 226, 160), rgb(255, 238, 141), alpha);
+}
+
+.App nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f6f6f5;
+}
+
+.App nav ul li {
+  display: block;
+}
+
+.App nav ul li a {
+  display: block;
+  padding: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.App nav ul li a:hover {
+  background-color: rgb(255, 254, 251);
+}
+
+.App nav ul li a.active {
+  background-color: #fbf184;
+  color: #060606;
+}

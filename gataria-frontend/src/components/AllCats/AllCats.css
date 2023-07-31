@@ -1,0 +1,36 @@
+/* Usuario.css */
+
+/* Container principal */
+.allcats-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Estilo para cada item do filtro */
+.allcats-filter {
+  margin-right: 10px;
+}
+
+/* Estilo para a label do filtro */
+.allcats-filter label {
+  margin-right: 5px;
+}
+
+/* Estilo para o input do filtro */
+.allcats-filter input,
+.allcats-filter select {
+  display: block;
+  width: 94%;
+  padding: 0.275rem 0.65rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  background-color: #f1e29d;
+  border: 1px solid #f4d449;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
